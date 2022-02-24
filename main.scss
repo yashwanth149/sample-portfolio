@@ -493,7 +493,7 @@ footer {
 
 @media screen and (max-width:1000px) {
     .menu {
-        position: relative;
+        position: static;
         display: none;
     }
     .container {
@@ -522,12 +522,11 @@ footer {
         left: 0;
     }
     .img2 {
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
     .w3-none {
        display: none !important; 
     }
-    
     .w3-hide-clear {
         display: block;
     }
