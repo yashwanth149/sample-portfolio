@@ -10,6 +10,12 @@ body {
   margin: 0 auto;
 }
 
+.w3-bars {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .menu {
   padding-left: 1rem;
   padding-top: 23px;
@@ -506,16 +512,32 @@ footer {
     display: none;
   }
   .container {
+    margin-top: 3rem;
     margin-left: 0px;
     -webkit-transition: margin-left 0.5s;
     transition: margin-left 0.5s;
   }
+  .w3-bars {
+    display: block;
+    margin: 16px;
+    top: 14px;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    margin-top: 0;
+  }
   .img1, .img2, .w3-charge, .w3-third, .footer {
     float: none;
     width: 100%;
+  }
+  .w3-bars {
+    left: 0;
+  }
+  .img2 {
+    margin-bottom: 6px;
   }
   .w3-none {
     display: none !important;
